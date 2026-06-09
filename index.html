@@ -623,7 +623,7 @@ ${faqContext}
   try {
     const resp = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", "x-api-key": "sk-ant-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", "anthropic-version": "2023-06-01" },
       body: JSON.stringify({
         model: "claude-haiku-4-5-20251001",
         max_tokens: 1000,
